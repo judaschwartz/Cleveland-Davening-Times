@@ -7,7 +7,7 @@
         let htmlString = '<ul>'
         
         for (let file of data) {
-          htmlString += file.name.includes('.pdf') `<li><a href="${file.path}">${file.name}</a></li>` : ''
+          htmlString += file.name.includes('.pdf') ? `<li><a href="${file.path}">${file.name}</a></li>` : ''
         }
 
         htmlString += '</ul>'
